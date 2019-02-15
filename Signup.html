@@ -1,0 +1,66 @@
+<!-- Sign Up Page -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title> ALAC Sign In </title>
+    <script src="resources/jquery-3.1.1.min.js"></script>
+    <script src="resources/TermJS.js"></script>
+    <link rel="stylesheet" href="resources/TermCSS.css" type="text/css"/>
+  </head>
+    <body>
+    <h1> Online ALAC </h1>
+        
+    <!-- Creates the navigation bar at the top -->
+    <div class = "menuBar">
+      <ul>
+        <li class="button"><a class="homeButton" href = "homePage.html"> Home </a></li>
+        <li class="button"><a class="homeButton" href = "Threads/thread_search.html"> Threads </a></li>
+        <li class="button"><a class="homeButton" href = "Mentors/mentorSearch.html"> Mentors </a></li>
+        <li class="button"><a class="homeButton" href = "profile.html"> Profile </a></li>
+        <li class="button"><a class="homeButton" href = "LogIn.html"> Sign Out </a></li>
+        <li id = "menuSearch"> Search: <input type = "text"> <button type = "submit"> Go </button></li>
+      </ul>
+    </div> 
+        
+    <!-- The user must register by filling out a form -->
+    <!-- The form will not let the user continue unless all the input is filled in -->
+    <form id="addForm" name="addForm" action="#" method="post" onsubmit="return validate(this);">
+        <div class="InnerBoard">
+          <h2>Sign Up</h2>
+            <div class="InnerBoardSpace">
+              <ul>
+                <li>RPI Email</li>
+                <li><input name="email" id="email" type="text"/></li>
+              </ul>
+            </div>
+            <div class="InnerBoardSpace">
+              <ul>
+                <li>Rensselaer ID Number (RIN)</li>
+                <li><input name="RIN" id="RIN" type="text"/></li>
+              </ul>
+            </div>
+            <div class="InnerBoardSpace">
+              <ul>
+                <li>Username</li>
+                <li><input name="username" id="username" type="text"/></li>
+              </ul>
+            </div>
+            <div class="InnerBoardSpace">
+              <ul>
+                <li>Password</li>
+                <li><input name="password" id="password" type="password"/></li>
+              </ul>
+            </div>
+            <div class="InnerBoardSpace">
+              <ul>
+                <li>Confirm Password</li>
+                <li><input name="confirmpass" id="confirmpass"  type="password"/></li>
+              </ul>
+            </div>
+            
+            <!-- Submit button that takes the user to the log in page -->
+            <button id="Button" type="submit">REGISTER</button>
+        </div>
+    </form>
+  </body>
+</html>

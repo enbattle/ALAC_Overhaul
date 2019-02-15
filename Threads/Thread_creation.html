@@ -1,0 +1,80 @@
+<!-- Thread creation page -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title> Thread Search Page </title>
+    <script src="../resources/jquery-3.1.1.min.js"></script>
+		<!-- Reuse code from thread_search.js -->
+    <script src="thread_search.js"></script>
+		<script src="Thread_creation.js"></script>
+    <link rel="stylesheet" href="../resources/TermCSS.css" type="text/css"/>
+  </head>
+  <body>
+      
+      <!-- Creates navigation bar at the top -->
+      <div class = "menuBar">
+  		<ul>
+          <li class="button"><a class="homeButton" href = "../homePage.html"> Home </a></li>
+          <li class="button"><a class="homeButton" href = "thread_search.html"> Threads </a></li>
+          <li class="button"><a class="homeButton" href = "../Mentors/mentorSearch.html"> Mentors </a></li>
+          <li class="button"><a class="homeButton" href = "../profile.html"> Profile </a></li>
+          <li class="button"><a class="homeButton" href = "../LogIn.html"> Sign Out </a></li>
+          <li id = "menuSearch"> Search: <input type = "text"> <button type = "submit"> Go </button></li>
+    	</ul>
+    </div> 
+      
+      <!-- Form for creating a new thread -->
+      <div class = "creation">
+          <h1>Thread Creation</h1>
+          <p style="text-align: center">Ask a question or create a discussion.</p>
+          <hr>
+          <form>
+              <p>Required Fields:</p>
+              <!-- Naming the thread -->
+              <label class="field" for="title">Thread Title:</label>
+              <div class="value"><input type="text" size="60" value="" name="title" id="title" autofocus/></div>
+						
+              <!-- Choose the subject and class -->
+							<div class = "topPadding">
+								<select id="major">
+                  	<option value="">-- select one --</option>
+                  	<option value="itws">ITWS</option>
+                  	<option value="gsas">GSAS</option>
+                  	<option value="csci">CSCI</option>
+              	</select>
+							</div>
+              <select id="class">
+                  <option value="">-- select subject first --</option>
+              </select>
+							<hr>
+							
+							<!-- Choose the professor, section, and semester -->
+							<p>Optional Fields:</p>
+              <select id="prof">
+                  <option value="">-- select class first --</option>
+              </select>
+              <select id="section">
+                  <option value="">-- select professor first --</option>
+              </select>
+              <select id="topic">
+                  <option value="">-- select section first--</option>
+              </select>
+              <select id="semester">
+                  <option value="S18">Spring 2018</option>
+                  <option value="F18">Fall 2018</option>
+              </select>
+							<hr>
+              
+              <!-- Add the thread details -->
+							<p>Details:</p>
+              <div class="value"><textarea rows="4" cols="40" name="details" id="details"></textarea></div>
+          </form>
+					<hr>
+          
+          <!-- Button to create the thread -->
+					<div class="topPadding">
+          <button type="submit" id="create">Create</button>
+					</div>
+      </div>
+    </body>
+</html>

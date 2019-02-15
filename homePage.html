@@ -1,0 +1,38 @@
+<!-- HTML for the homepage -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title> Home Page </title>
+    <script src="jquery-3.1.1.min.js"></script>
+    <link rel="stylesheet" href="resources/TermCSS.css" type="text/css"/>
+  </head>
+  <body>
+    <h1> Online ALAC </h1>
+      
+    <!-- Creates the navigation bar near the top of the page -->
+    <!-- Paths to all of the main pages -->
+    <div class = "menuBar">
+        <ul>
+        <li class="button"><a class="homeButton" href = "homePage.html"> Home </a></li>
+        <li class="button"><a class="homeButton" href = "Threads/thread_search.html"> Threads </a></li>
+        <li class="button"><a class="homeButton" href = "Mentors/mentorSearch.html"> Mentors </a></li>
+        <li class="button"><a class="homeButton" href = "profile.html"> Profile </a></li>
+        <li class="button"><a class="homeButton" href = "LogIn.html"> Sign Out </a></li>
+        <li id = "menuSearch"> Search: <input type = "text"> <button type = "submit"> Go </button></li>
+        </ul>
+    </div> 
+      
+    <!-- Tells a bit of background of the Online Alac, and allows students to log in or register -->
+    <h2 id = "centeredTitle" class = "topPadding2"> Ask questions, participate in discussions, and receive mentor feedback </h2>
+    <div id = "registerOrLogin">
+        <div class = "topPadding2"><form action="Signup.html" class="columns3">
+            <button>Register</button>
+        </form></div>
+        <div class = "topPadding2"><form action="LogIn.html" class="columns3">
+            <button>Login</button>
+        </form></div>
+    </div>
+    <div>
+    </div>
+	</body>
+</html>

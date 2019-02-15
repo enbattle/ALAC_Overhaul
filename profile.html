@@ -1,0 +1,80 @@
+<!-- Profile page -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title> Profile Page </title>
+    <script src="resources/jquery-3.1.1.min.js"></script>
+    <link rel="stylesheet" href="resources/TermCSS.css" type="text/css"/>
+  </head>
+  <body>
+    <h1>Online ALAC</h1>
+      
+    <!-- Creates navigation bar at the top -->
+    <div class = "menuBar">
+  		<ul>
+          <li class="button"><a class="homeButton" href = "homePage.html"> Home </a></li>
+          <li class="button"><a class="homeButton" href = "Threads/thread_search.html"> Threads </a></li>
+          <li class="button"><a class="homeButton" href = "Mentors/mentorSearch.html"> Mentors </a></li>
+          <li class="button"><a class="homeButton" href = "profile.html"> Profile </a></li>
+          <li class="button"><a class="homeButton" href = "LogIn.html"> Sign Out </a></li>
+          <li id = "menuSearch"> Search: <input type = "text"> <button type = "submit"> Go </button></li>
+    	</ul>
+    </div> 
+      
+    <!-- Find the page for the mentors themselves -->
+    <form action="Mentors/mentorOwnPage.html">
+        <button>Your mentor hours</button>
+    </form>
+    <h1>Username Profile</h1>
+      
+    <!-- Notice about current updates -->
+    <div class="profileDiv">
+        <ul>
+          <li><b>Updates</b></li>
+          <li>Update1</li>
+          <li>Update2</li>
+        </ul>
+    </div>
+    <hr>
+		
+    <div>
+      <!-- The user's created threads -->
+      <div class="profileDiv">
+      	<ul>
+          <li><b>Your Created Threads</b></li>
+          <li> Thread 1 </li>
+          <li> Thread 2 </li>
+          <li> Thread 3 </li>
+          <li> Thread 4 </li>
+          <li> Thread 5 </li>
+        </ul>
+        <hr>
+      </div>
+        
+			<!-- The user's saved thread pages -->
+      <div class="profileDiv">
+        <ul>
+          <li><b>Saved Thread Pages</b></li>
+          <li> Thread 1 </li>
+          <li> Thread 2 </li>
+          <li> Thread 3 </li>
+          <li> Thread 4 </li>
+          <li> Thread 5 </li>
+        </ul>
+				<hr>
+      </div>
+			
+      <!-- The user's saved class mentor pages -->
+      <div class="profileDiv">
+        <ul>
+          <li><b>Saved Mentor Pages</b></li>
+          <li> Class 1 </li>
+          <li> Class 2 </li>
+          <li> Class 3 </li>
+          <li> Class 4 </li>
+          <li> Class 5 </li>
+        </ul>
+      </div>
+    </div>
+    </body>
+</html>

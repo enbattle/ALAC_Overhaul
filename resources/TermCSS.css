@@ -1,0 +1,151 @@
+/* Universal CSS use */
+html{
+    background: url(wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+	text-align: center;
+}
+
+ul {
+	list-style-type: none;      			
+}
+
+/* Creates the navigation bar line */
+#menuSearch {
+	float: right;
+  margin-right: 30px;
+}
+
+.menuBar {
+    border: solid;
+    background-color: red !important;
+    float: left;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 50px;
+}
+    
+    .menuBar > li {
+        display: inline-block
+    }
+
+/* Creates the buttons on the navigation bar */
+.homeButton {
+    color: black;
+    text-decoration: none;
+    text-align: left;
+    font-variant: small-caps;
+    font-family: Helvatica, Arial, sans-serif;
+}
+
+.button {
+    color: black;
+    border-radius: 30px 30px 30px, 30px;
+    font: bold 11px Arial;
+    text-decoration: none;
+    margin: 0px 10px 0px 5px;
+    padding: 0px 0px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+    /*Activates the menu buttons*/
+    .button:active {
+        text-transform: uppercase;
+        background-color: white;
+        transform: translateY(4px);
+    }
+
+.underlinedButton {
+		background: none;
+  	border: none;
+  	margin: 0;
+  	padding: 0;
+		text-decoration: underline;
+		font: inherit;
+		outline: none;
+}
+
+.topPadding {
+		padding-top: 1%;
+}
+
+.topPadding2 {
+		padding-top: 3%;
+}
+
+/* Sign up and Login Page CSS*/
+/*-------------------------------------------------------------------------*/
+.InnerBoard {
+    background: white;
+    border: solid;
+    text-align: center;
+    width: 100%;
+    margin-top: 150px;
+}
+
+.InnerBoardSpace {
+    margin-bottom: 20px;
+}
+.InnerBoard li {
+    text-align: left;
+    font-size: 20px;    
+}
+
+#Button {
+    width: 500px;
+    height: 50px;
+}
+
+/*-------------------------------------------------------------------------*/
+
+
+/* Mentor Pages CSS */
+/*-------------------------------------------------------------------------*/
+.columns {
+		display: inline-block;
+		padding-left: 3%;
+}
+.columns2 {
+		display: inline-block;
+		padding-left: 25%;
+}
+.columns3 {
+		display: inline-block;
+		padding-left: 47%;
+}
+.columns4 {
+		display: inline-block;
+		padding-left: 40%;
+}
+.columns5 {
+		display: inline-block;
+		padding-left: 3%;
+		text-align: center;
+}
+.end {
+		padding-bottom: 3%;
+}
+#centeredTitle {
+		text-align: center;
+}
+.rowClass {
+		background-color: lightgray;
+		margin: 1%;
+}
+/*-------------------------------------------------------------------------*/
+
+
+/* Profile Page CSS */
+/*-------------------------------------------------------------------------*/
+.profileDiv {
+		text-align: center;
+}
+.profileDiv li:first-child {
+		font-size: 160%;
+}
+/*-------------------------------------------------------------------------*/

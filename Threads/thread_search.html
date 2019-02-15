@@ -1,0 +1,67 @@
+<!-- Thread search page -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title> Thread Search Page </title>
+    <script src="../resources/jquery-3.1.1.min.js"></script>
+    <script src="thread_search.js"></script>
+    <link rel="stylesheet" href="../resources/TermCSS.css" type="text/css"/>
+  </head>
+  <body>
+      <h1>Online ALAC</h1>
+      
+      <!-- Creates navigation bar at the top -->
+      <div class = "menuBar">
+  		<ul>
+        <li class="button"><a class="homeButton" href = "../homePage.html"> Home </a></li>
+        <li class="button"><a class="homeButton" href = "thread_search.html"> Threads </a></li>
+        <li class="button"><a class="homeButton" href = "../Mentors/mentorSearch.html"> Mentors </a></li>
+        <li class="button"><a class="homeButton" href = "../profile.html"> Profile </a></li>
+        <li class="button"><a class="homeButton" href = "../LogIn.html"> Sign Out </a></li>
+        <li id = "menuSearch"> Search: <input type = "text"> <button type = "submit"> Go </button></li>
+    	</ul>
+      </div> 
+		
+      <div class = "Thread Search columns">
+					<!-- Goes to the thread creation page to make a new thread -->
+      		<form action="Thread_creation.html">
+        		<button>Create a Thread</button>
+      		</form>
+				
+					<!-- Searching for a thread -->
+          <h1>Thread Search</h1>
+          <div class = "dropBox">
+              <select id="major">
+                  <option value="">-- select one --</option>
+                  <option value="itws">ITWS</option>
+                  <option value="gsas">GSAS</option>
+                  <option value="csci">CSCI</option>
+              </select>
+              
+              <!-- Choose the specific subject, class, professor, section, and semester -->
+              <select id="class">
+                  <option value="">-- select subject first --</option>
+              </select>
+              <select id="prof">
+                  <option value="">-- select class first --</option>
+              </select>
+              <select id="section">
+                  <option value="">-- select professor first --</option>
+              </select>
+              <select id="topic">
+                  <option value="">-- select section first--</option>
+              </select>
+              <select id="semester">
+                  <option value="S18">Spring 2018</option>
+                  <option value="F18">Fall 2018</option>
+              </select>
+          </div>
+          
+          <!-- Find the thread page(s) -->
+          <button type="submit" id="search">Search</button>
+					<!-- Output the results of the search -->
+					<div id = "results" class = "topPadding2"></div>
+      </div>
+      
+    </body>
+</html>

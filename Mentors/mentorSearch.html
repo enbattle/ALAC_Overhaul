@@ -1,0 +1,45 @@
+<!--Mentor search page -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title> Mentor Search </title>
+    <script src="../resources/jquery-3.1.1.min.js"></script>
+    <script src="mentorSearch.js"></script>
+    <link rel="stylesheet" href="../resources/TermCSS.css" type="text/css"/>
+  </head>
+  <body>
+		<h1> Online ALAC </h1>
+        <!-- Creates navigation bar at the top -->
+		<div class="menuBar">
+          <ul>
+            <li class="button"><a class="homeButton" href = "../homePage.html"> Home </a></li>
+            <li class="button"><a class="homeButton" href = "../Threads/thread_search.html"> Threads </a></li>
+            <li class="button"><a class="homeButton" href = "mentorSearch.html"> Mentors </a></li>
+            <li class="button"><a class="homeButton" href = "../profile.html"> Profile </a></li>
+            <li class="button"><a class="homeButton" href = "../LogIn.html"> Sign Out </a></li>
+            <li id = "menuSearch"> Search: <input type = "text"> <button type = "submit"> Go </button></li>
+    	  </ul>
+		</div>
+		<!-- Search for a mentor -->
+		<div class="columns4" class = "topPadding2">
+			<h3 id="centeredTitle">Class Mentor Search</h3>
+			<p>Choose a class to view its mentors' hours:</p>
+			
+      <!-- Select a specific subject -->
+			<select id="subject" onChange="addClasses()">
+				<option value="" selected>(Subject)</option>
+				<option value="CSCI">CSCI</option>
+				<option value="ITWS">ITWS</option>
+			</select>
+			
+      <!-- Select a specific class -->
+			<select id="class">
+				<option value="">(Choose a subject first)</option>
+			</select>
+      <!-- Find the mentor -->
+			<button onclick="classMentors()">Go</button>
+			<h3 id="result"></h3>
+		</div>
+		
+	</body>
+</html>	

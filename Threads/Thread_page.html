@@ -1,0 +1,47 @@
+<!-- Example thread page -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title> Thread Search Page </title>
+    <script src="../resources/jquery-3.1.1.min.js"></script>
+    <script src="Thread_page.js"></script>
+    <link rel="stylesheet" href="../resources/TermCSS.css" type="text/css"/>
+  </head>
+  <body>
+    <h1>Online ALAC</h1>
+      
+    <!-- Creates navigation bar at the top -->
+    <div class = "menuBar">
+  		<ul>
+          <li class="button"><a class="homeButton" href = "../homePage.html"> Home </a></li>
+          <li class="button"><a class="homeButton" href = "thread_search.html"> Threads </a></li>
+          <li class="button"><a class="homeButton" href = "../Mentors/mentorSearch.html"> Mentors </a></li>
+          <li class="button"><a class="homeButton" href = "../profile.html"> Profile </a></li>
+          <li class="button"><a class="homeButton" href = "../LogIn.html"> Sign Out </a></li>
+          <li id = "menuSearch"> Search: <input type = "text"> <button type = "submit"> Go </button></li>
+    	</ul>
+    </div> 
+      
+    <!-- An example of a thread -->
+    <div id="Thread">
+        <h2>Lab 10 by dayr2</h2> 
+        <p>While trying to work on the lab, I seem to have gotten locked out of my phpserver. Everytime I try to use myphp, it tells me I have an invalid login with password "NO". Anyone know what is wrong and know how it can be fixed?</p>
+        <ul>
+            <li>Class: ITWS 1101 01</li>
+            <li>Professor: Richard Plotka</li>
+            <li>Semester: Spring 2018</li>
+            <li>Topic: Lab 10</li>
+        </ul>
+      </div>
+			<button id = 'saveThread'> Save Thread </button>
+      <h2>2 Responses:</h2>
+      <a href="#" id="hideText">Hide Responses</a> |
+      <a href="#" id="showText">Show Responses</a>
+      <div id="Responses">
+          <h3>User dummy1</h3>
+          <p>The problem seems to stem from you being logged out, can you repeat the steps in Lab 7 that set up your php?</p>
+          <h3>TA admin1</h3>
+          <p>See me after class on Monday and we can figure this out.</p>
+      </div>
+  </body>
+</html>

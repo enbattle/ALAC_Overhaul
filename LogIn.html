@@ -1,0 +1,52 @@
+<!-- Log In Page -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title> ALAC Login </title>
+    <script src="resources/jquery-3.1.1.min.js"></script>
+    <script src="resources/TermJS.js"></script>
+    <link rel="stylesheet" href="resources/TermCSS.css" type="text/css"/>
+  </head>
+    <body>
+    <h1> Online ALAC </h1>
+    <!-- Creates the nagivation bar at the top of the page -->
+    <div class = "menuBar">
+      <ul>
+        <li class="button"><a class="homeButton" href = "homePage.html"> Home </a></li>
+        <li class="button"><a class="homeButton" href = "Threads/thread_search.html"> Threads </a></li>
+        <li class="button"><a class="homeButton" href = "Mentors/mentorSearch.html"> Mentors </a></li>
+        <li class="button"><a class="homeButton" href = "profile.html"> Profile </a></li>
+        <li class="button"><a class="homeButton" href = "LogIn.html"> Sign Out </a></li>
+        <li id = "menuSearch"> Search: <input type = "text"> <button type = "submit"> Go </button></li>
+      </ul>
+    </div>
+    
+    <!-- Form for filling out the email and the password in order to log in -->
+    <!-- All fields must be filled in to be able to log in -->
+    <!-- Input fields have a nice blur/focus effect -->
+    <form id="addForm" name="addForm" action="#" method="post" onsubmit="return validatelog(this);">
+      <div class="InnerBoard">
+        <h2>Log In</h2>
+          <div class="InnerBoardSpace">
+            <input id="username" name="Username" type="text" value="Username/Email" onfocus="textAreaClear(this);" onblur="textAreaBlur(this);"/>
+          </div>
+          <div class="InnerBoardSpace">
+            <input id="password" name="Password" type="password" value="Password" onfocus="textAreaClear(this);" onblur="textAreaBlur(this);"/>
+          </div>
+          
+          <!-- The "forgot password hyperlink (does not work)-->
+          <a id="forgetPassword" href="">Forgot Password?</a>
+          <br />
+          <br />
+          <!-- The "remember me checkbox (does nothing)-->
+          <div id="checkbox">
+            <input name ="checkbox" type="checkbox" id="check"/>
+            <label for="check">Remember me</label>
+          </div>
+          <br /> 
+          <!-- Submit button that takes the user to the profile page -->
+          <button id="Button" type="submit" >LOGIN</button>
+      </div>
+    </form>
+  </body>
+</html>
